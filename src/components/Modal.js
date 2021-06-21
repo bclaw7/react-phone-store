@@ -29,12 +29,12 @@ export default class Modal extends Component {
                                             <h5 className="text-muted">price : $ {price}</h5>
                                             <Link to='/'>
                                                 <ButtonContainer onClick={()=>closeModal()}>
-                                                    store
+                                                    products
                                                 </ButtonContainer>
                                             </Link>
                                             <Link to='/cart'>
                                                 <ButtonContainer cart onClick={()=>closeModal()}>
-                                                    go to cart
+                                                    cart
                                                 </ButtonContainer>
                                             </Link>
 										</div>
@@ -61,5 +61,6 @@ const ModalContainer = styled.div`
 	justify-content: center;
 	#modal {
 		background: var(--mainWhite);
+        border-radius: 1rem;
 	}
 `;
